@@ -2,19 +2,28 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Clone Repo Code') {
             steps {
-                echo 'Building...'
+                git url: 'https://github.com/Vipul271293/PythonProject.git'
             }
         }
-        stage('Test') {
+
+        stage('Verify Python Installation') {
             steps {
-                echo 'Testing...'
+                bat 'python --version'
+                bat 'pip --version'
             }
         }
-        stage('Deploy') {
+
+        stage('Install Robot Framework') {
             steps {
-                echo 'Deploying...'
+                bat 'pip install robotframework'
+            }
+        }
+
+        stage('Run Automation') {
+            steps {
+                bat 'robot Tests/'
             }
         }
     }
