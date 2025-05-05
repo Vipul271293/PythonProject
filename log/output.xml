@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-05-05T17:13:25.833272" rpa="false" schemaversion="5">
+<suite id="s1" name="Vipul" source="C:\Users\vipul\PycharmProjects\PythonProject\TestCases\Vipul.robot">
+<test id="s1-t1" name="QATest" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:26.537090" level="INFO">Opening browser 'chrome' to base url 'https://www.linkedin.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-05T17:13:26.536188" elapsed="6.426810"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-05T17:13:32.968869" elapsed="1.276640"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:13:36.248332" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:13:34.246407" elapsed="2.002914"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:36.252989" level="INFO">Clicking element '//a[normalize-space()='Sign in']'.</msg>
+<arg>${Sign_In_Mainpage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:13:36.250828" elapsed="2.227697"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:13:40.480477" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:13:38.479413" elapsed="2.001961"/>
+</kw>
+<kw name="Login with Valid Credential" owner="Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:40.486920" level="INFO">Typing text 'vipul1427@gmail.com' into text field '//input[@type='email']'.</msg>
+<arg>${Email_Address_XPath}</arg>
+<arg>${Enter_Email_Address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:13:40.485361" elapsed="0.312995"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:40.800531" level="INFO">Typing text 'Dhamu@2705' into text field '//input[@type='password']'.</msg>
+<arg>${Password_XPath}</arg>
+<arg>${Enter_Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:13:40.798934" elapsed="0.203877"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:41.004412" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<arg>${Login_Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:13:41.003635" elapsed="14.302587"/>
+</kw>
+<arg>${Enter_Email_Address}</arg>
+<arg>${Enter_Password}</arg>
+<status status="PASS" start="2025-05-05T17:13:40.482791" elapsed="14.824143"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:55.756654" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../TestCases/custom_name.png"&gt;&lt;img src="../TestCases/custom_name.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../TestCases/custom_name.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-05T17:13:55.308002" elapsed="0.449358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:13:57.759706" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:13:55.758151" elapsed="2.002160"/>
+</kw>
+<kw name="Verify the 3rd Notification" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:13:57.764923" level="INFO">Clicking element '//span[@title='Notifications']'.</msg>
+<arg>${Notifications_Link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:13:57.763271" elapsed="0.877621"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:14:03.642441" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:13:58.641377" elapsed="5.002007"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:14:03.693837" level="INFO">@{Notifications} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="3f8094ad141e6eb61722d774b2766b99", element="f.0C5CCB40ADA3CDFDDCA56E5516141A1C.d.825BA8D0FBC5E4796E3F5AAAED5D7565.e.178")&gt; | &lt;selenium.webd...</msg>
+<var>@{Notifications}</var>
+<arg>${Notification_List}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:14:03.644362" elapsed="0.049830"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-05-05T17:14:03.695358" level="INFO">Length is 10.</msg>
+<msg time="2025-05-05T17:14:03.695769" level="INFO">${count} = 10</msg>
+<var>${count}</var>
+<arg>${notifications}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-05-05T17:14:03.694723" elapsed="0.001272"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-05T17:14:03.698270" level="INFO">Total notifications found: 10</msg>
+<arg>Total notifications found: ${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-05T17:14:03.696464" elapsed="0.002193"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:14:05.699986" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:14:03.699088" elapsed="2.001359"/>
+</kw>
+<kw name="Run Keyword Unless" owner="BuiltIn">
+<msg time="2025-05-05T17:14:05.701327" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<arg>${count} &gt;= 3</arg>
+<arg>Fail</arg>
+<arg>Less than 3 notifications found!</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<status status="PASS" start="2025-05-05T17:14:05.700957" elapsed="0.002216"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:14:05.772383" level="INFO">${text} = Kristen Vautour just reposted.</msg>
+<var>${text}</var>
+<arg>${Notification_3rd_Row}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:14:05.703703" elapsed="0.068991"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:14:07.774880" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:14:05.773157" elapsed="2.002203"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:14:07.776512" level="INFO">Clicking element '(//a[@class='nt-card__headline nt-card__text--word-wrap t-black t-normal text-body-small'])[3]'.</msg>
+<arg>${Notification_3rd_Row}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-05T17:14:07.775843" elapsed="0.331592"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:14:10.109152" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:14:08.107971" elapsed="2.001604"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-05-05T17:14:10.725104" level="INFO">${URL} = https://www.linkedin.com/feed/?highlightedUpdateType=SHARED_BY_YOUR_NETWORK&amp;highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7325164377664294914</msg>
+<var>${URL}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-05-05T17:14:10.109998" elapsed="0.615697"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-05T17:14:15.728492" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-05T17:14:10.727130" elapsed="5.001855"/>
+</kw>
+<status status="PASS" start="2025-05-05T17:13:57.761507" elapsed="17.967802"/>
+</kw>
+<status status="PASS" start="2025-05-05T17:13:26.532642" elapsed="49.197049"/>
+</test>
+<status status="PASS" start="2025-05-05T17:13:25.878669" elapsed="49.852724"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Vipul" id="s1" pass="1" fail="0" skip="0">Vipul</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-05T17:14:05.701327" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+</errors>
+</robot>
